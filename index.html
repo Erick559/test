@@ -32,6 +32,14 @@
     <script>
         const btn = document.getElementById('fullscreenBtn');
         const container = document.getElementById('fullscreenContainer');
+        const isIphone = /iPhone/.test(navigator.userAgent);
+
+        if(isIphone){
+            alert('True');
+        }
+        else {
+            alert('False');
+        }
 
         btn.onclick = ()=> {
             if(!document.fullscreenElement){
