@@ -35,10 +35,7 @@
         const isIphone = /iPhone/.test(navigator.userAgent);
 
         if(isIphone){
-            alert('True');
-        }
-        else {
-            alert('False');
+            btn.style.display = 'none';
         }
 
         btn.onclick = ()=> {
